@@ -34,7 +34,7 @@ My proficiency in these skills relative to my experience.
 
 ◼◼◼◻◻
 
-**JavasScript**
+**JavaScript**
 
 ◼◼◼◼◻
 
@@ -60,7 +60,7 @@ My proficiency in these skills relative to my experience.
 
 A Diploma certified Software Developer ****with the ability to create software in a variety of languages as a full stack developer. My primary skill set consists of .NET, specifically in full stack development. **My most developed skills exist within .NET and the React Framework.**
 
-My most principled programming languages are **C#, HTML/CSS, JavaScript/Typescript, SQL,& Python**. 
+My most principled programming languages are **C#, HTML/CSS, JavaScript/TypeScript, SQL & Python**. 
 
 I’m also proficient with Entity Framework 6 and Core and possess one year of professional experience with the **React Framework**. 
 
@@ -80,7 +80,7 @@ Following the acquisition of MOQDigital, Brennan Digital was formed. Working wit
 
 - Development and Completion of Office Add-In’s built using React
 - Working within a microservice architecture performing project maintenance utilising .NET Core, Entity Framework Core & Microsoft Azure
-- SCRUM Practices in an Agile environment, facilitating daily Stand-ups,  Sprint Reviews and Sprint Retrospectives
+- Scrum practices in an agile environment, facilitating daily Stand-ups,  Sprint Reviews and Sprint Retrospectives
 
 November 2019 - March 2022
 
