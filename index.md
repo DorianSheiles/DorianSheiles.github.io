@@ -58,13 +58,15 @@ My proficiency in these skills relative to my experience.
 
 ---
 
-A Diploma certified Software Developer ****with the ability to create software in a variety of languages as a full stack developer. My primary skill set consists of .NET, specifically in full stack development. **My most developed skills exist within .NET and the React Framework.**
+A Diploma certified Software Developer ****with the ability to create software in a variety of languages as a full stack developer. **My primary skill set consists of .NET Core and the React Framework.**
 
 My most principled programming languages are **C#, HTML/CSS, JavaScript/TypeScript, SQL & Python**. 
 
-I’m also proficient with Entity Framework 6 and Core and possess one year of professional experience with the **React Framework**. 
+I’m also proficient with **Entity Framework 6, Entity Framework Core and possess one year of professional experience with the React Framework**. 
 
-I have experience with the SOLID principles and try to adhere to them as much as I can. I have developed excellent soft skills in system administration for windows environments and have a sound knowledge of networking, where I have performed the duties of a network engineer at previous places of employment.
+I have experience with the SOLID principles and try to adhere to them as much as I can. **I have experience in Scrum practices and agile development environments.** 
+
+I have developed excellent soft skills in system administration for windows environments and have a sound knowledge of networking, where I have performed the duties of a network engineer at previous places of employment.
 
 ## Work experience
 
@@ -76,7 +78,7 @@ Technical Consultant - Full Stack Developer ****@ [Brennan Digital](https://www.
 
 *Perth, WA*
 
-Following the acquisition of MOQDigital, Brennan Digital was formed. Working within Application Development, ****I delivered high quality software to enterprise clients. Primarily focused on work with Office Add-In’s built in React with Azure Infrastructure. I had the pleasure of being exposed to microservice architecture performing project maintenance and code clean-up. I conducted some SCRUM practices facilitating daily stand-up’s, sprint reviews and retrospectives. I worked with my manager on pre-sales presenting proof of concepts I had developed for clients winning bids for projects.
+Following the acquisition of MOQDigital, Brennan Digital was created under the Brennan Umbrella. Working within Application Development, ****I delivered high quality software to enterprise clients. Primarily focused on work with Office Add-In’s built in React utilizing cloud infrastructure. I had the pleasure of being exposed to microservice architecture performing project maintenance and code clean-up. I conducted Scrum practices facilitating daily stand-up’s, sprint reviews and retrospectives. I worked with my manager on pre-sales presenting proof of concepts I had developed for clients winning bids for projects.
 
 - Development and Completion of Office Add-In’s built using React
 - Working within a microservice architecture performing project maintenance utilising .NET Core, Entity Framework Core & Microsoft Azure
