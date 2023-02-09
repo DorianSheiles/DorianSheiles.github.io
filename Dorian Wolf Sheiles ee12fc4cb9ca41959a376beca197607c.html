@@ -1,0 +1,688 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Dorian Wolf Sheiles</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ee12fc4c-b9ca-4195-9a37-6beca197607c" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/solid_blue.png" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Dorian%20Wolf%20Sheiles%20ee12fc4cb9ca41959a376beca197607c/index.jpg"/></div><h1 class="page-title">Dorian Wolf Sheiles</h1></header><div class="page-body"><p id="0ddadc16-0da3-4136-ac36-1ac16bfa5bab" class="">
+</p><h2 id="25b405b7-8895-4c1f-b459-e7b45fe99121" class="">Software Developer &amp; Technology Consultant</h2><div id="55cebb9c-2378-42e9-87a2-50ce8d228dfc" class="column-list"><div id="82b8b150-6842-4448-a121-68afa341143c" style="width:50.000000000000014%" class="column"><p id="f67a926a-540d-4564-9a85-57d1da12c6b7" class="">+61 426 296 011<div class="indented"><p id="e606a800-ca1d-4b00-b062-9afb588ae4d8" class="">dorianwolfsheiles@gmail.com</p><p id="6af9a8df-80c0-460d-a377-4726f3c95aba" class="">
+</p></div></p></div><div id="6db9cc27-4640-4acd-8ff1-1366311c53aa" style="width:50%" class="column"><p id="0079afa6-6042-4806-a48e-9205374a2afb" class=""><a href="http://softwaresamurai.net">My Website</a></p><p id="1b678738-49d2-46b2-99f1-69cdaf181a84" class="">Github: @<a href="https://github.com/DorianSheiles">DorianSheiles</a></p><p id="71a40c84-f4fa-421f-b345-94989a7e5800" class="">Linkedin: @<a href="https://www.linkedin.com/in/DorianWolfSheiles/">DorianWolfSheiles</a></p><p id="e12957bc-71b2-48eb-b020-d209ebfe46b1" class="">
+</p></div></div><h2 id="ab1449b2-76ef-49ef-9513-bcde07837236" class="">Skills</h2><hr id="625ddca5-5691-49ef-8964-0db535fb3f67"/><p id="4114e003-cd53-4618-9f19-fdc86bda82a9" class="">My proficiency in these skills relative to my experience.</p><div id="9fb4bfd9-b417-4a9a-b425-e902ca505462" class="column-list"><div id="a8169b87-3199-4619-b845-9975156a197b" style="width:25%" class="column"><p id="5c73b785-63c2-42f1-8ce3-7ddfd257eecf" class=""><strong>.NET</strong></p><p id="58a37b37-6cb6-40ae-aca9-4185cae007e1" class="">◼◼◼◼◼</p><p id="25da42a0-ad5e-4815-83c0-cba39de46420" class="">
+</p><p id="cb0926ec-2f38-4059-945f-4709113c2261" class=""><strong>React Framework</strong></p><p id="ce39bdad-26d6-4afc-9f7a-a58afa62615b" class="">◼◼◼◼◻</p><p id="ec0ba107-d9b1-41d1-9597-e8fa1d1e81df" class="">
+</p><p id="b45c497f-779f-4f49-a338-6eebabe9132d" class=""><strong>SQL</strong></p><p id="5fb50ad1-8b15-4291-9f39-83ee70ccd385" class="">◼◼◼◻◻</p><p id="e0106e16-1b47-4929-99a3-2bb7ae2af99b" class="">
+</p><p id="bd8d3166-df90-4afd-8c68-6d5a697188cc" class=""><strong>Microsoft Azure</strong></p><p id="88b8df4e-179a-4b9e-8f9a-378c7c266196" class="">◼◼◼◻◻</p><p id="ee3d91b6-a6bf-4188-be79-0e3bd8f93dd2" class="">
+</p><p id="ef252e64-e691-4140-9c39-49d734d1efba" class=""><strong>JavasScript</strong></p><p id="f6f685b9-c745-4f08-9b3e-f0ea8a1c7eef" class="">◼◼◼◼◻</p></div><div id="79ded688-85b0-4667-8e85-b44d0f45a24b" style="width:74.99999999999999%" class="column"><p id="5e074a1c-3dce-4948-a931-6107d539fb1f" class=""><strong>TypeScript</strong></p><p id="55ea2f71-d32c-486d-a4ed-00db3cb97289" class="">◼◼◼◼◻</p><p id="079a7686-2893-4eaa-b19a-24f64de9e678" class="">
+</p><p id="9c7f1cc1-135d-4f8c-9c99-985c089d6d04" class=""><strong>Python</strong></p><p id="f3a779de-7a6c-45b5-b893-92708efac4e6" class="">◼◼◼◻◻</p><p id="cc12f19e-c5c4-4678-8423-23ebf02364fa" class="">
+</p><p id="ad9ed259-59ad-4fe0-a26c-d05de55ef6a2" class=""><strong>HTML</strong></p><p id="0ee7c306-8090-4e92-84a4-47c514e88d47" class="">◼◼◼◻◻</p><p id="b1c31baf-99ae-48f8-8697-c90e9d41cc1d" class="">
+</p><p id="86c3e249-6e42-454d-a797-ff46fe1d4d99" class=""><strong>CSS</strong></p><p id="eecd0512-d349-420d-ada0-0d9b157d331e" class="">◼◼◼◻◻</p><p id="7e56270a-1a8c-4b8b-ac90-418cf572ee30" class="">
+</p><p id="01915d25-6855-48b3-823b-efabc85aac1d" class="">
+</p></div></div><h2 id="d65d22bf-252d-41d7-92dc-e3d113ae1832" class="">Expertise</h2><hr id="ede309a9-aa88-4c62-9de4-61b43342ea49"/><div id="1eb666ef-5e43-40f6-aacb-27e36b678489" class="column-list"><div id="ff802fd9-b008-46d9-81fc-133b9264f33c" style="width:50%" class="column"><p id="f5af825d-c885-4362-b55f-a31821203e8d" class="">A Diploma certified Software Developer<strong> </strong>with the ability to create software in a variety of languages as a full stack developer. My primary skill set consists of .NET, specifically in full stack development. <strong>My most developed skills exist within .NET and the React Framework.</strong></p><p id="abd906cb-e63c-4ab2-aa3d-0c3906a784f7" class="">
+</p></div><div id="272adea9-7ffc-4511-a7ae-545603610d1e" style="width:50%" class="column"><p id="9dbdf950-2eb9-454e-89ba-c9febc6bc018" class="">My most principled programming languages are <strong>C#, HTML/CSS, JavaScript/Typescript, SQL,&amp; Python</strong>. </p><p id="9bd174b9-2d9d-4206-a70a-26a5367c546c" class="">I’m also proficient with Entity Framework 6 and Core and possess one year of professional experience with the <strong>React Framework</strong>. </p><p id="7136403a-68b7-432c-9435-c17f2b92edb8" class="">I have experience with the SOLID principles and try to adhere to them as much as I can. I have developed excellent soft skills in system administration for windows environments and have a sound knowledge of networking, where I have performed the duties of a network engineer at previous places of employment.</p></div></div><h2 id="752b8ca0-9dc5-4dc3-9a29-e066b2bb2d56" class="">Work experience</h2><hr id="312f128d-da26-4401-a51c-3ea0ac4f8958"/><div id="0d40f460-1128-4f97-b246-17c7348d8eeb" class="column-list"><div id="95a638b2-380d-4631-bccc-52f2d45ae821" style="width:18.75%" class="column"><p id="42079319-50ed-40e3-807b-877b5682dd26" class="">March 2022 - Present</p><p id="6a02d66e-c002-45b6-a245-d791f13e68ab" class="">
+</p></div><div id="73a91bf8-90a1-4d19-a212-8b4882f9264e" style="width:81.25%" class="column"><p id="fbacb684-51ad-4ed3-a2e0-9b9c6fc6f7a2" class="">Technical Consultant - Full Stack Developer<strong> </strong>@ <a href="https://www.brennanit.com.au/">Brennan Digital</a></p><p id="44fe8e4f-9c9b-43d0-b78b-992e7ab6f17c" class=""><em>Perth, WA</em></p><p id="2f104b55-2b12-4a81-97cd-aa88c74972ab" class="">Following the acquisition of MOQDigital, Brennan Digital was formed. Working within Application Development,<strong> </strong>I delivered high quality software to enterprise clients. Primarily focused on work with Office Add-In’s built in React with Azure Infrastructure. I had the pleasure of being exposed to microservice architecture performing project maintenance and code clean-up. I conducted some SCRUM practices facilitating daily stand-up’s, sprint reviews and retrospectives. I worked with my manager on pre-sales presenting proof of concepts I had developed for clients winning bids for projects.</p><ul id="4ca7267d-177f-43b1-9ab3-9a71d66ee5ac" class="bulleted-list"><li style="list-style-type:disc">Development and Completion of Office Add-In’s built using React</li></ul><ul id="e3270ba3-c9f4-4131-aeb9-c6cf58a829a9" class="bulleted-list"><li style="list-style-type:disc">Working within a microservice architecture performing project maintenance utilising .NET Core, Entity Framework Core &amp; Microsoft Azure</li></ul><ul id="c144922b-3cef-467a-a9a1-80ea75761d13" class="bulleted-list"><li style="list-style-type:disc">SCRUM Practices in an Agile environment, facilitating daily Stand-ups,  Sprint Reviews and Sprint Retrospectives</li></ul></div></div><p id="a43a15a5-2bf3-4334-a4b7-b4cd80523c62" class="">
+</p><div id="9298f756-e15c-481c-af91-658002978d5f" class="column-list"><div id="3ae43150-9410-47f9-8f8f-e7e684e3a643" style="width:18.75%" class="column"><p id="ae7c5047-d583-4756-be4b-f6723c985f97" class="">November 2019 - March 2022</p></div><div id="f4a5c93e-6e06-4d7c-b41b-a7636a25e252" style="width:81.25%" class="column"><p id="f5d41753-241b-4973-a74f-c62f04d99812" class="">Lead Software Developer<strong> @ </strong><a href="https://ia-group.com.au/">Industrial Automation Group</a></p><p id="a5168037-76e6-4e2b-b879-dda35d09a92e" class=""><em>Perth, WA</em></p><p id="14b3f994-5def-4a07-8413-a2ee2bb8d775" class="">Reporting to the Managing Director and Director of Operations, I manage the multiple software products we have in production while developing new integrations that adopt new hardware. I managed a small software team of consisting of three members, mentoring, and ensuring the younger developers grew into their roles and achieve success in reaching deadlines<strong>. </strong>I conducted feasibility studies on new technology while performing my day-to-day ICT duties which included monitoring servers, backup processes and active directory management. I maintain our various networks in and outside the office including four (4) different VPN servers for remote site access and our office WIFI and LAN. I am responsible for the office Email’s ensuring strict spam filtering and reducing the company risk to bad actors.</p><ul id="dc81b577-7f7b-4f9c-b936-15917c41aadf" class="bulleted-list"><li style="list-style-type:disc">Fixing reported bugs and unintended behaviours in the ASP.NET projects we use to maintain our fleet of devices</li></ul><ul id="0092050e-32df-4e0b-98ba-907e07824708" class="bulleted-list"><li style="list-style-type:disc">Planning and creating new database schema to support the evolving CMS platforms</li></ul><ul id="63ee8706-0aa6-4cbd-9b98-981d473474e2" class="bulleted-list"><li style="list-style-type:disc">Implementing new hardware and network protocols to increase the versatility of the CMS platforms</li></ul><ul id="cc17f527-ee2a-4ae5-8d50-48d8bcab9708" class="bulleted-list"><li style="list-style-type:disc">Mentoring junior developers in achieving their desired goals in a reasonable time frame, while ensuring knowledge is transferred so the products can be maintained long term, without a need for myself to be involved.</li></ul></div></div><p id="70850abf-a73c-4e63-9feb-a4a5f7097936" class="">
+</p><div id="e06b63ed-e5b1-4d9c-9718-2d7c9ed018eb" class="column-list"><div id="a590da23-a639-4f03-b401-61f1f71d579e" style="width:18.75%" class="column"><p id="57ad7c32-2675-4cac-ba3a-cd26700fef5e" class="">2020  - Present</p><p id="9438c2f6-0f8d-4b30-8a42-b726093cf23f" class="">
+</p></div><div id="cf477021-7b2e-47ec-b3fd-62cbd321e713" style="width:81.25%" class="column"><p id="33057310-bf55-417a-a31b-c9ed31210907" class="">Technology Consultant &amp; Software Developer @ <a href="http://nexus365.com.au">Nexus365</a></p><p id="6fc9f8ca-7fd2-433d-bc06-03f53177cc5a" class="">Acting as an Adviser to Nexus365, I assist them with their capabilities for building software, selecting the correct personnel for a project or pre-sales in a solution specialist capacity.</p><p id="20579fb0-42b3-4059-9058-a8eb74a542a7" class="">
+</p></div></div><p id="e21f5dd9-d741-4158-b9c7-9deb70dd273c" class="">
+</p><h2 id="02950628-b511-40b6-a231-a3437f41f67a" class=""><strong>Education</strong></h2><hr id="9bd62408-3841-4acc-a260-6119db7a1335"/><div id="0920cc89-daf7-40e0-8b21-efbf57f21a2e" class="column-list"><div id="ecf28bca-ce7e-4f6c-9b8a-95dd23800aa1" style="width:18.75%" class="column"><p id="9e2ef084-c808-4f53-b06e-4a586334210f" class="">2018 - 2019</p></div><div id="1cda039f-e3dd-4a6a-a1ec-aa2bc58d60b9" style="width:81.25%" class="column"><p id="84efea16-781f-4720-907d-1498b7c82118" class=""><strong>North Metro TAFE - Joondalup Campus</strong></p><p id="fcf51f17-ff4c-4bf0-9c35-b4416fdf3f54" class=""><em>Perth, WA</em></p><p id="0daa31ad-84df-46f4-a8b6-d631fe16b64d" class="">Diploma in Software Development</p></div></div><p id="2ca10bd5-8a0b-48a8-9a45-384de47f3ad6" class="">Projects</p><hr id="b3856879-8945-4b9c-93f9-9cb5cd72f5c2"/><div id="56169d55-d62a-40c8-b3f6-a18f6ed771db" class="column-list"><div id="a3c521be-fca0-48cf-9953-08d1f41a8b91" style="width:50%" class="column"><figure id="3494c034-0b4a-4afd-bd45-87e2ad42f226"><a href="https://nexus365.com.au/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Nexus365 - Home</div><div class="bookmark-description">Just because you are paying for IT support, doesn&#x27;t mean you&#x27;re getting it, and how would you know? When was the last time you took a look at your IT and how important it is to todays successful business practice and compliance? What innovations in IT are currently revolutionising your industry and giving your competitors the edge?</div></div><div class="bookmark-href"><img src="https://nexus365.com.au/assets/img/favicon.png" class="icon bookmark-icon"/>https://nexus365.com.au/</div></div><img src="https://nexus365.com.au/assets/img/Microsoft-Partner-Logo.png" class="bookmark-image"/></a></figure></div><div id="5ec7a4cd-7487-4911-b2e2-e7d42bdb11a0" style="width:50%" class="column"></div></div></div></article></body></html>
