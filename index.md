@@ -54,13 +54,13 @@ My proficiency in these skills relative to my experience.
 
 ◼◼◼◻◻
 
-## Expertise
+## About Me
 
 ---
 
 A Diploma certified Software Developer ****with the ability to create software in a variety of languages as a full stack developer. **My primary skill set consists of .NET Core and the React Framework.**
 
-My most principled programming languages are **C#, HTML/CSS, JavaScript/TypeScript, SQL & Python**. 
+My most disciplined programming languages are **C#, HTML/CSS, JavaScript/TypeScript, SQL & Python**. 
 
 I’m also proficient with **Entity Framework 6, Entity Framework Core and possess one year of professional experience with the React Framework**. 
 
@@ -115,8 +115,4 @@ Acting as an Adviser to Nexus365, I assist them with their capabilities for buil
 
 Diploma in Software Development
 
-Projects
-
 ---
-
-[Nexus365 - Home](https://nexus365.com.au/)
