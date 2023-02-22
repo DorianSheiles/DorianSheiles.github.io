@@ -4,6 +4,8 @@
 
 dorianwolfsheiles@gmail.com
 
++61 426 296 011
+
 [My Website](http://softwaresamurai.net)
 
 Github: @[DorianSheiles](https://github.com/DorianSheiles)
@@ -56,7 +58,7 @@ My proficiency in these skills relative to my experience.
 
 ---
 
-A Diploma certified Software Developer ****with table to work with a variety of languages, frameworks and tools. **My primary skill set consists of .NET Core and the React Framework.**
+A Diploma certified Software Developer  ****with experience in a variety of languages, frameworks and tools. **My primary skill set consists of .NET Core and the React Framework.**
 
 I am proficient with the following programming languages are **C#, HTML/CSS, JavaScript/TypeScript, SQL & Python**. 
 
@@ -87,6 +89,7 @@ Following the acquisition of MOQdigital by Brennan IT. I stayed working within A
 - Oversaw successful delivery of Office Add-In’s built using React
 - Working within a microservice architecture performing project maintenance utilising .NET Core, Entity Framework Core & Microsoft Azure
 - Scrum practices in an agile environment, facilitating daily Stand-ups,  Sprint Reviews and Sprint Retrospectives
+- Demonstration of proof of concepts for presales to prospective clients
 
 November 2019 - March 2022
 
@@ -94,7 +97,7 @@ Lead Software Developer **@** [Industrial Automation Group](https://ia-group.com
 
 *Perth, WA*
 
-Reporting to the Managing Director and Director of Operations, I managed the multiple software products they had in production while developing capabilities to integrate new Programmable Logic Controllers into existing web applications. I managed a small software team of consisting of three members, mentoring, and ensuring the younger developers grew into their roles and achieve success**.** I conducted feasibility studies on new technology while performing my day-to-day ICT duties which included monitoring servers, backup processes and Active Directory management. I maintained the various networks in and outside the office including four different VPN servers for remote site access and our office WIFI and LAN. I was responsible for the office Email’s ensuring strict spam filtering and reducing the company risk to bad actors.
+Reporting to the Managing Director and Director of Operations, I managed the multiple software products they had in production while developing capabilities to integrate new Programmable Logic Controllers into existing web applications. I managed a small software team consisting of three members, mentoring, and ensuring the younger developers grew into their roles and achieve success**.** I conducted feasibility studies on new technology while performing my day-to-day ICT duties which included monitoring servers, backup processes and Active Directory management. I maintained the various networks in and outside the office including four different VPN servers for remote site access and our office WIFI and LAN. I was responsible for the office Email’s ensuring strict spam filtering and reducing the company risk to bad actors.
 
 - Fixing reported bugs and unintended behaviours in the ASP.NET projects we use to maintain our fleet of devices
 - Planning and creating new database schema to support the evolving CMS platforms
@@ -119,4 +122,8 @@ Acting as an Adviser to Nexus365, I assist them with their capabilities for buil
 
 Diploma in Software Development
 
+## References
+
 ---
+
+References provided upon request
